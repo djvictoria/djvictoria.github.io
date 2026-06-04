@@ -1,0 +1,1 @@
+import{g as e,m as t}from"../chunks/CPoLeCGz.js";import"../chunks/xihTtKlq.js";var n=e(`<h1>Work in progress!</h1>`);function r(e){t(e,n())}export{r as component};
