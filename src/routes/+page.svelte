@@ -105,7 +105,7 @@
               </p>
             </div>
 
-            <div class="w-full sm:w-40 h-24 flex-shrink-0 overflow-hidden border border-white/10 group-hover:border-black/20 transition-colors">
+            <div class="w-full sm:w-40 h-32 flex-shrink-0 overflow-hidden border border-white/10 group-hover:border-black/20 transition-colors">
               <img 
                 src={work.image} 
                 alt="{work.title} thumbnail" 
