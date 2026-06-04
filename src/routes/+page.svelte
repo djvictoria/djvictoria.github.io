@@ -40,7 +40,7 @@
       class="flex flex-col sm:flex-row items-center sm:items-start gap-8"
     >
       <!-- Profile Picture -->
-      <div class="w-32 h-32 rounded-full bg-white/10 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden">
+      <div class="w-42 h-42 rounded-full bg-white/10 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden">
         <span class="text-white/40 text-sm tracking-widest uppercase">Photo</span>
       </div>
 
