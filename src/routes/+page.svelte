@@ -126,6 +126,8 @@
   </div>
 </main>
 <style>
+
+/* Background */
   main {
     position: relative;
   }
