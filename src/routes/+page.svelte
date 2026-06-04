@@ -20,6 +20,12 @@
       title: 'Battle City: War of Steel', 
       description: 'Top-down tank shooter game with 12 distinct levels.',
       image: '/battlecity.png'
+    },
+    {
+      id: 'ronsho', 
+      title: 'RONIN SHOWDOWN', 
+      description: 'Competitive 2D fighting game focused on core combat fundamentals.',
+      image: '/ronsho.png'
     }
   ];
 </script>
