@@ -93,6 +93,14 @@
             class="group flex flex-col sm:flex-row justify-between sm:items-center gap-6 p-6 border border-white/20 hover:bg-white hover:text-black transition-all duration-500 ease-out"
             in:fade={{ duration: 600, delay: 600 + (i * 150) }}
           >
+            <div class="w-full sm:w-40 h-32 flex-shrink-0 overflow-hidden border border-white/10 group-hover:border-black/20 transition-colors">
+              <img 
+                src={work.image} 
+                alt="{work.title} thumbnail" 
+                class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+              />
+            </div>
+
             <div class="flex-1">
               <div class="flex items-center gap-4">
                 <h3 class="text-2xl font-semibold tracking-tight">{work.title}</h3>
@@ -103,14 +111,6 @@
               <p class="mt-3 text-sm text-white/50 group-hover:text-black/70 transition-colors duration-500">
                 {work.description}
               </p>
-            </div>
-
-            <div class="w-full sm:w-40 h-32 flex-shrink-0 overflow-hidden border border-white/10 group-hover:border-black/20 transition-colors">
-              <img 
-                src={work.image} 
-                alt="{work.title} thumbnail" 
-                class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
-              />
             </div>
           </a>
         {/each}
