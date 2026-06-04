@@ -6,17 +6,20 @@
     { 
       id: 'roman-empire', 
       title: 'Roman Empire', 
-      description: 'Visual novel with interactive puzzle and memory fixing game.' 
+      description: 'Visual novel with interactive puzzle and memory fixing game.',
+      image: '/romanempire.png'
     },
     { 
       id: 'foryourpeace', 
       title: 'FYP', 
-      description: 'Interactive puzzle horror game set in a Windows XP interface.' 
+      description: 'Interactive puzzle horror game set in a Windows XP interface.', 
+      image: '/fyp.png'
     },
     { 
       id: 'battle-city', 
       title: 'Battle City: War of Steel', 
-      description: 'Top-down tank shooter game with 12 distinct levels.' 
+      description: 'Top-down tank shooter game with 12 distinct levels.',
+      image: '/battlecity.png'
     }
   ];
 </script>
@@ -85,24 +88,30 @@
       
       <div class="flex flex-col gap-4">
         {#each works as work, i (work.id)}
-          <!-- Link wrap -->
           <a 
             href="/works/{work.id}"
-            class="group block p-6 border border-white/20 hover:bg-white hover:text-black transition-all duration-500 ease-out"
+            class="group flex flex-col sm:flex-row justify-between sm:items-center gap-6 p-6 border border-white/20 hover:bg-white hover:text-black transition-all duration-500 ease-out"
             in:fade={{ duration: 600, delay: 600 + (i * 150) }}
           >
-            <div class="flex justify-between items-center">
-              <h3 class="text-2xl font-semibold tracking-tight">{work.title}</h3>
-              
-              <!-- Arrow slider animation -->
-              <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-4 group-hover:translate-x-0">
-                →
-              </span>
+            <div class="flex-1">
+              <div class="flex items-center gap-4">
+                <h3 class="text-2xl font-semibold tracking-tight">{work.title}</h3>
+                <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-4 group-hover:translate-x-0">
+                  →
+                </span>
+              </div>
+              <p class="mt-3 text-sm text-white/50 group-hover:text-black/70 transition-colors duration-500">
+                {work.description}
+              </p>
             </div>
-            
-            <p class="mt-3 text-sm text-white/50 group-hover:text-black/70 transition-colors duration-500">
-              {work.description}
-            </p>
+
+            <div class="w-full sm:w-40 h-24 flex-shrink-0 overflow-hidden border border-white/10 group-hover:border-black/20 transition-colors">
+              <img 
+                src={work.image} 
+                alt="{work.title} thumbnail" 
+                class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+              />
+            </div>
           </a>
         {/each}
       </div>
