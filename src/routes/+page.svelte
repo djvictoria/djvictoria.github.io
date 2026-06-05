@@ -140,6 +140,44 @@
       </div>
     </section>
 
+    <!-- Personal & Creative Works Section -->
+     <section 
+      in:fly={{ y: 30, duration: 800, delay: 600 }} 
+      class="flex flex-col gap-8"
+    >
+      <h2 class="text-xl font-medium border-b border-white/20 pb-4 uppercase tracking-widest text-white/80">
+        Art & Audio
+      </h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {#each personalStuff as item, i (item.id)}
+          <a 
+            href="/personal/{item.id}"
+            class="group relative h-48 overflow-hidden border border-white/20 hover:border-white/60 transition-colors block"
+            in:fade={{ duration: 600, delay: 800 + (i * 150) }}
+          >
+            <img 
+              src={item.image} 
+              alt={item.title} 
+              class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500"
+            />
+            
+            <div class="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+              <div class="flex items-center gap-2">
+                <h3 class="text-2xl font-semibold tracking-tight text-white">{item.title}</h3>
+                <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-4 group-hover:translate-x-0 text-white">
+                  →
+                </span>
+              </div>
+              <p class="mt-1 text-sm text-white/60 group-hover:text-white/90 transition-colors duration-500">
+                {item.description}
+              </p>
+            </div>
+          </a>
+        {/each}
+      </div>
+    </section>
+
   </div>
 </main>
 <style>
