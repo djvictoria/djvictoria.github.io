@@ -34,14 +34,14 @@
     {
       id: 'art-gallery',
       title: 'Digital Art',
-      description: 'Concept art, sketches, and visual designs for projects like Epiko ng Wika.',
-      image: '/art.png' // Make sure to add an art.png to your static folder!
+      description: 'Character Art, Background Art, and more.',
+      image: '/art.png'
     },
     {
       id: 'music-production',
       title: 'Audio & Music',
       description: 'Original compositions, beat-making, and sound design.',
-      image: '/music.png' // Make sure to add a music.png to your static folder!
+      image: '/music.png'
     }
   ];
 </script>
