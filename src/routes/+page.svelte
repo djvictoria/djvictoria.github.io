@@ -28,6 +28,22 @@
       image: '/ronsho.png'
     }
   ];
+
+  // Personal & Creative Works
+  const personalStuff = [
+    {
+      id: 'art-gallery',
+      title: 'Digital Art',
+      description: 'Concept art, sketches, and visual designs for projects like Epiko ng Wika.',
+      image: '/art.png' // Make sure to add an art.png to your static folder!
+    },
+    {
+      id: 'music-production',
+      title: 'Audio & Music',
+      description: 'Original compositions, beat-making, and sound design.',
+      image: '/music.png' // Make sure to add a music.png to your static folder!
+    }
+  ];
 </script>
 
 <!-- Main Container -->
@@ -47,6 +63,7 @@
       <!-- Name & Contacts -->
       <div class="flex flex-col items-center sm:items-start text-center sm:text-left pt-2">
         <h1 class="text-4xl font-bold tracking-tight mb-2">Drew Jason T. Victoria</h1>
+        <p class="text-white/60 text-lg mb-6">3rd Year Computer Science Student</p>
         <p class="text-white/60 text-lg mb-6">3rd Year Computer Science Student</p>
         
         <div class="flex gap-6 text-sm font-medium tracking-wide">
