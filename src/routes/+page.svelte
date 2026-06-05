@@ -152,7 +152,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {#each personalStuff as item, i (item.id)}
           <a 
-            href="/personal/{item.id}"
+            href="/"
             class="group relative h-48 overflow-hidden border border-white/20 hover:border-white/60 transition-colors block"
             in:fade={{ duration: 600, delay: 800 + (i * 150) }}
           >
