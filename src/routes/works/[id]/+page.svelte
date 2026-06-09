@@ -1,19 +1,23 @@
 <script lang="ts">
-  // Import Svelte navigation function
   import { afterNavigate } from '$app/navigation';
+  import { tick } from 'svelte'; // Import tick
 
-  // Autoscroll logic
-  afterNavigate(() => {
-    // Check if there's a hash in the URL
-    const hash = window.location.hash;
-    if (hash) {
-      // Locate the element with the corresponding ID
-      const element = document.querySelector(hash);
-      if (element) {
-        // Scroll the element into view smoothly
-        element.scrollIntoView({ behavior: 'smooth' });
+  // Listen for navigation events
+  afterNavigate(async () => {
+    
+    // Wait for the DOM to update after navigation
+    await tick(); 
+
+    // Add a delay to ensure the element is rendered before scrolling
+    setTimeout(() => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
-    }
+    }, 50); 
   });
 
   // All Projects Data
