@@ -54,7 +54,7 @@
         <div class="border-b border-white/20 pb-4">
           <h2 class="text-4xl font-bold tracking-tight">{work.title}</h2>
           
-          <p class="mt-3 text-sm font-semibold tracking-widest uppercase text-white/70">
+          <p class="mt-3 text-sm font-semibold tracking-widest uppercase text-white/90">
             Role: {work.contribution}
           </p>
 
