@@ -4,14 +4,17 @@
     {
       id: 'art-gallery',
       title: 'Digital Art',
-      description: 'Character Art, Background Art, and concept sketches.',
+      description: 'Character/Background Art, and more.',
+      details: 'A showcase of my visual work, ranging from pixel art animations made in Aseprite to full digital illustrations painted in Krita. <em>(work in progress)</em>',
       image: '/art.png'
     },
     {
       id: 'music-production',
-      title: 'Audio & Music',
+      title: 'Music & Audio',
       description: 'Original compositions, beat-making, and sound design.',
-      image: '/music.png'
+      details: 'A collection of my original soundtracks and audio engineering projects produced using FL Studio 21 and REAPER. <em>(Audio players to be implemented)</em>',
+      image: '/music.png',
+      link: 'https://on.soundcloud.com/PMgTlA2CxYsv5YdzaY'
     }
   ];
 </script>
@@ -26,7 +29,7 @@
 
   <div class="max-w-4xl mx-auto px-6 py-24 flex flex-col gap-32">
     
-    <h1 class="text-5xl font-bold tracking-tight text-center mb-12">Creative Works</h1>
+    <h1 class="text-5xl font-bold tracking-tight text-center mb-12">Personal & Creative Works</h1>
 
     {#each creatives as item}
       <section id={item.id} class="min-h-[70vh] flex flex-col justify-center gap-8 pt-24">
@@ -41,8 +44,25 @@
         </div>
 
         <p class="text-white/80 text-lg leading-relaxed">
-          Detailed gallery or audio tracks {item.title}
+          {@html item.details}
         </p>
+
+        {#if item.link}
+          <div class="mt-6 flex flex-col gap-3">
+            <p class="text-white/60 text-base italic">
+              For the meantime, you can check out my music on SoundCloud:
+            </p>
+            <a 
+              href={item.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-fit flex items-center gap-3 border border-white/30 px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-white hover:text-black hover:scale-105"
+            >
+              Listen on SoundCloud
+              <span class="text-lg leading-none">→</span>
+            </a>
+          </div>
+        {/if}
 
       </section>
     {/each}
