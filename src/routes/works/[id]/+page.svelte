@@ -1,39 +1,18 @@
 <script lang="ts">
-  import { afterNavigate } from '$app/navigation';
-  import { tick } from 'svelte'; // Import tick
-
-  // Listen for navigation events
-  afterNavigate(async () => {
-    
-    // Wait for the DOM to update after navigation
-    await tick(); 
-
-    // Add a delay to ensure the element is rendered before scrolling
-    setTimeout(() => {
-      const hash = window.location.hash;
-      if (hash) {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    }, 50); 
-  });
-
   // All Projects Data
   const works = [
     { 
       id: 'roman-empire', 
-      title: 'Roman Empire', 
+      title: 'Roman Empire (Grand Champion)', 
       description: 'Visual novel with interactive puzzle and memory fixing game.',
       details: 'This game focuses on deep narrative choices and memory reconstruction mechanics...',
       image: '/romanempire.png'
     },
     { 
       id: 'foryourpeace', 
-      title: 'FYP', 
+      title: 'FYP (Champion)', 
       description: 'Interactive puzzle horror game set in a Windows XP interface.', 
-      details: 'A unique atmospheric horror experience that uses a retro OS interface to build tension...',
+      details: 'A unique atmospheric horror experience that uses a retro OS interface to build tension. This g',
       image: '/fyp.png'
     },
     { 
@@ -77,7 +56,7 @@
           <img src={work.image} alt={work.title} class="w-full h-full object-cover opacity-80" />
         </div>
 
-        <p class="text-white/80 text-lg leading-relaxed max-w-2xl">
+        <p class="text-white/80 text-lg leading-relaxed">
           {work.details}
         </p>
 
