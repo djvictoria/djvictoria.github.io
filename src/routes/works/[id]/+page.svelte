@@ -1,5 +1,22 @@
 <script lang="ts">
-  // We can reuse your game data here to generate the page!
+  // Import Svelte navigation function
+  import { afterNavigate } from '$app/navigation';
+
+  // Autoscroll logic
+  afterNavigate(() => {
+    // Check if there's a hash in the URL
+    const hash = window.location.hash;
+    if (hash) {
+      // Locate the element with the corresponding ID
+      const element = document.querySelector(hash);
+      if (element) {
+        // Scroll the element into view smoothly
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+
+  // All Projects Data
   const works = [
     { 
       id: 'roman-empire', 
