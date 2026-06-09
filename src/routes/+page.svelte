@@ -64,7 +64,7 @@
       <div class="flex flex-col items-center sm:items-start text-center sm:text-left pt-2">
         <h1 class="text-4xl font-bold tracking-tight mb-2">Drew Jason T. Victoria</h1>
         <p class="text-white/60 text-lg mb-6">3rd Year Computer Science Student</p>
-        <p class="text-white/60 text-lg mb-6">Interested in fields such as 2D/3D Animation, QA Testing, Audio and Sound Design, and UI/UX Design</p>
+        <p class="text-white/60 text-lg mb-6">Interested in fields such as 2D/3D Animation, QA Testing, Game Development, and UI/UX Design</p>
         
         <div class="flex gap-6 text-sm font-medium tracking-wide">
         
