@@ -4,20 +4,23 @@
     { 
       id: 'roman-empire', 
       title: 'Roman Empire (Grand Champion)', 
+      contribution: 'SFX & Music',
       description: 'Visual novel with interactive puzzle and memory fixing game.',
-      details: 'A visual novel puzzle game that was developed as an entry for the SIKAPTala 2026 Game Jam with the theme "We Don\'t See Things as They Are"',
+      details: 'A visual novel puzzle game that was developed as an entry for the SIKAPTala 2026 Game Jam with the theme "We Don\'t See Things as They Are", earning the title of Grand Champion along with 6 group members.',
       image: '/romanempire.png'
     },
     { 
       id: 'foryourpeace', 
       title: 'FYP (Champion)', 
+      contribution: 'Game Programmer & Game Artist',
       description: 'Interactive puzzle horror game set in a Windows XP interface.', 
-      details: 'A narrative puzzle game developed in partial fulfillment of requirements for four academic subjects and as a winning entry in the Game On! Game Jam Manila 2025 ("Break the Loop; Rewrite the Pattern").',
+      details: 'A narrative puzzle game developed in partial fulfillment of requirements for four academic subjects and as a winning entry in the Game On! Game Jam Manila 2025 ("Break the Loop; Rewrite the Pattern") alongside 4 group members.',
       image: '/fyp.png'
     },
     { 
       id: 'battle-city', 
       title: 'Battle City: War of Steel', 
+      contribution: 'UI/UX Developer',
       description: 'Top-down tank shooter game with 12 distinct levels.',
       details: 'A top-down shooter game inspired by Battle City that was developed in partial fulfillment of requirements for the Introduction to Game Programming course in collaboration with two other developers.',
       image: '/battlecity.png'
@@ -25,6 +28,7 @@
     {
       id: 'ronsho', 
       title: 'RONIN SHOWDOWN', 
+      contribution: 'Lead Artist & Animator',
       description: 'Competitive 2D fighting game focused on core combat fundamentals.',
       details: 'A competitive 2D fighting game focused on core combat fundamentals that was developed in partial fulfillment of requirements for the Application Development course in collaboration with the lead developer.',
       image: '/ronsho.png'
@@ -49,7 +53,12 @@
         
         <div class="border-b border-white/20 pb-4">
           <h2 class="text-4xl font-bold tracking-tight">{work.title}</h2>
-          <p class="text-white/50 text-xl mt-2">{work.description}</p>
+          
+          <p class="mt-3 text-sm font-semibold tracking-widest uppercase text-white/70">
+            Role: {work.contribution}
+          </p>
+
+          <p class="text-white/50 text-xl mt-3">{work.description}</p>
         </div>
 
         <div class="w-full aspect-video border border-white/20 bg-white/5 overflow-hidden">
