@@ -149,7 +149,7 @@
     </section>
 
     <!-- Personal & Creative Works Section -->
-     <section 
+    <section 
       in:fly={{ y: 30, duration: 800, delay: 600 }} 
       class="flex flex-col gap-8"
     >
@@ -160,7 +160,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {#each personalStuff as item, i (item.id)}
           <a 
-            href="/"
+            href="/creatives#{item.id}"
             class="group relative h-48 overflow-hidden border border-white/20 hover:border-white/60 transition-colors block"
             in:fade={{ duration: 600, delay: 800 + (i * 150) }}
           >
