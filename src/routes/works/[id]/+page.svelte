@@ -5,28 +5,28 @@
       id: 'roman-empire', 
       title: 'Roman Empire (Grand Champion)', 
       description: 'Visual novel with interactive puzzle and memory fixing game.',
-      details: 'This game focuses on deep narrative choices and memory reconstruction mechanics...',
+      details: 'A visual novel puzzle game that was developed as an entry for the SIKAPTala 2026 Game Jam with the theme "We Don\'t See Things as They Are"',
       image: '/romanempire.png'
     },
     { 
       id: 'foryourpeace', 
       title: 'FYP (Champion)', 
       description: 'Interactive puzzle horror game set in a Windows XP interface.', 
-      details: 'A unique atmospheric horror experience that uses a retro OS interface to build tension. This g',
+      details: 'A narrative puzzle game developed in partial fulfillment of requirements for four academic subjects and as a winning entry in the Game On! Game Jam Manila 2025 ("Break the Loop; Rewrite the Pattern").',
       image: '/fyp.png'
     },
     { 
       id: 'battle-city', 
       title: 'Battle City: War of Steel', 
       description: 'Top-down tank shooter game with 12 distinct levels.',
-      details: 'An action-packed arcade shooter featuring custom level design and intense boss battles...',
+      details: 'A top-down shooter game inspired by Battle City that was developed in partial fulfillment of requirements for the Introduction to Game Programming course in collaboration with two other developers.',
       image: '/battlecity.png'
     },
     {
       id: 'ronsho', 
       title: 'RONIN SHOWDOWN', 
       description: 'Competitive 2D fighting game focused on core combat fundamentals.',
-      details: 'Built to test player reflexes with a focus on spacing, timing, and punishing mistakes...',
+      details: 'A competitive 2D fighting game focused on core combat fundamentals that was developed in partial fulfillment of requirements for the Application Development course in collaboration with the lead developer.',
       image: '/ronsho.png'
     }
   ];
