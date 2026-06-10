@@ -60,7 +60,11 @@
       class="flex flex-col sm:flex-row items-center sm:items-start gap-8"
     >
       <div class="w-42 h-42 rounded-full bg-white/10 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden">
-        <span class="text-white/40 text-sm tracking-widest uppercase">Photo</span>
+        <img 
+          src="/resumepic.png" 
+          alt="Drew Jason Profile" 
+          class="w-full h-full object-cover"
+        />
       </div>
 
       <div class="flex flex-col items-center sm:items-start text-center sm:text-left pt-2">
